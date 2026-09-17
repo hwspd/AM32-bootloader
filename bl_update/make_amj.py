@@ -24,6 +24,7 @@ img = open(args.hex, 'rb').read()
 default_flash_sizes = {
     "F031" : 32,
     "F051" : 32,
+    "F350" : 64,
     "G071" : 128,
     "E230" : 32,
     "F415" : 32,
@@ -67,7 +68,7 @@ elif can:
 else:
     flash_size = "%uK" % default_flash_sizes[MCU]
 
-if not MCU in 'E230 F031 F051 F415 F415_128K F421 G071 G071_64K L431 L431_128K G431 V203 A153'.split():
+if not MCU in 'E230 F031 F051 F350 F415 F415_128K F421 G071 G071_64K L431 L431_128K G431 V203 A153'.split():
     print(f"Bad MCU {MCU}")
     sys.exit(1)
 

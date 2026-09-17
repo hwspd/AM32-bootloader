@@ -22,7 +22,7 @@ import re
 import sys
 
 # AM32 MCU families the bootloader knows about (matches Makefile MCU_BUILDS)
-KNOWN_MCUS = ['E230', 'F031', 'F051', 'F415', 'F421', 'G071', 'G431',
+KNOWN_MCUS = ['E230', 'F031', 'F051', 'F350', 'F415', 'F421', 'G071', 'G431',
               'L431', 'V203', 'A153']
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
